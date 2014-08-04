@@ -11,6 +11,10 @@ foreach($uri as $id => $dir){
 $page = isset($uri[1]) ? $uri[1] : 'index';
 array_shift($uri);
 $args = $uri === NULL ? array() : $uri;
+
+if (!preg_match("/[a-zA-Z0-9\/]/", $page))
+    die("Attempted injection");
+
 if(strpos($page, '_') === 0){
     include $page.'.php'; // BE WEARY OF INJECTION!!!
 } else {

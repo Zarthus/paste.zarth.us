@@ -64,7 +64,7 @@ class PageHandler {
         if(!include_e('../templates/' . $this->template . '_tpl.php', $this->pass, $this->tutorials)){
             $template = $this->template;
             include('../templates/404_tpl.php');
-            //echo "<br/>I couldn't find the page you were looking for, sorry. Maybe you should head <a href='/'>home</a> and find your way back to where you were.<br/><br/>";// Let nasonfish &lt;nasonfish [at] gmail {dot} com&gt; know if you believe this is a mistake.";
+            // echo "<br/>I couldn't find the page you were looking for, sorry. Maybe you should head <a href='/'>home</a> and find your way back to where you were.<br/><br/>";// Let nasonfish &lt;nasonfish [at] gmail {dot} com&gt; know if you believe this is a mistake.";
         }
     }
 

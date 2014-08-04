@@ -18,6 +18,7 @@
          <?php $this->page(); ?>
     </div>
     <div class="foot">
+         <p style="text-align:center;">Made by <a href="https://github.com/nasonfish">nasonfish</a></p>
          <?php $this->foot(); ?>
     </div>
 </div>
