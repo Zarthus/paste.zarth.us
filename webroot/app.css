@@ -1,13 +1,13 @@
 body{
-    background: url('/brickwall/brickwall.png');
+    background: url('/kindajean/kindajean.png');
     font-family: 'Arapey', serif;
 }
 
 #make{
-    background: #002b36;
+    background: #fff;
     word-wrap: break-word;
     padding: 10px;
-    color: #839496; /* base0 */
+    color: #000; /* base0 */
     font-size: 14px;
     width: 100%;
     height: 40em;
