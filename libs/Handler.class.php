@@ -15,7 +15,7 @@ class Handler {
     public $predis;
 
     function __construct(){
-        require 'Predis/Autoloader.php';
+        require 'Predis/autoload.php';
         Predis\Autoloader::register();
         $predis = new Predis\Client(array('port'=>6383));
         $this->predis = $predis;
