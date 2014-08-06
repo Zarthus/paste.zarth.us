@@ -24,7 +24,11 @@ class Handler {
     public function getLanguages_html(){
         $ret = '';
         foreach($this->languages as $val => $language){
-            $ret .= '<option value="'.$val.'">' . $language . '</option>';
+                if ($val == "none") { // Set 'text' as default option.
+                    $ret .= '<option value="'.$val.'" selected="selected">' . $language . '</option>';
+                } else {
+                    $ret .= '<option value="'.$val.'">' . $language . '</option>';
+                }
         }
         return $ret;
     }

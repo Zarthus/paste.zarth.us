@@ -1,5 +1,4 @@
 <?php
-error_reporting(-1);ini_set('display_errors',1);
 include('../system/Config.php');
 require '../system/PageHandler.class.php';
 $uri = explode('/', strpos($_SERVER['REQUEST_URI'], '?') ? strstr($_SERVER['REQUEST_URI'], '?', true) : $_SERVER['REQUEST_URI']);
